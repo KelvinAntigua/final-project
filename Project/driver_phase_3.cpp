@@ -1,6 +1,6 @@
-#include <iostream>
+/* #include <iostream>
 
-void menu(/* B container,  A container */)
+void menu(/* B container,  A container )
 {
     UserInterface ui; // create a UserInterface object
     int option = 0;
@@ -26,7 +26,7 @@ void menu(/* B container,  A container */)
             default:
                 std::cout << "INVALID OPTION" << "\n";
         }        
-        ui->menu(/* B container, A container */); // run the selected UI
+        ui->menu(/* B container, A container ); // run the selected UI
 
     } while( option != 3 );
 }
@@ -48,4 +48,4 @@ int main()
 
     std::cout << std::endl;
     return 0;
-}
+} */
