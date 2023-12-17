@@ -1,0 +1,33 @@
+ET580 Project Documentation
+
+Instructions:
+A. Write the group number and full names of all active group members.
+B. Write the name of each file and who contributed.
+C. State ALL known problems or incomplete features of the project.
+D. In each .cpp file write a single line comment next to each function stating who contributed.
+-------------------------------------------------------------------------------------------
+
+A. Group Members:Kelvin Antigua
+
+
+B. Files : Contributors
+1.a.csv  Kelvin Antigua
+2.b.csv  Kelvin Antigua
+3.c_UserInterface.h  Kelvin Antigua
+4.Customer.cpp     Kelvin Antigua
+5.Customer.h.     Kelvin Antigua
+6.driver_phase_1.cpp Kelvin Antigua
+7.driver_phase_2.cpp Kelvin Antigua
+8.driver_phase_3.cpp Kelvin Antigua
+9.Employee.cpp Kelvin Antigua
+10.Employee.h  Kelvin Antigua
+11.Files.h   Kelvin Antigua
+12.Food.cpp  Kelvin Antigua
+13.Food.h    Kelvin Antigua   
+14.Makefile   Kelvin Antigua
+15.UserInterface.h Kelvin Antigua
+
+C. Known Problems or Incomplete Code
+Couldnt get the print functions in the driver_phase_1.cpp file to work.
+ Also Couldnt get The "getprice()" function in the food.cpp file to work
+ The customer display function also doesnt work.
