@@ -4,8 +4,8 @@
 class C_UI // inherit from UI
 {
     public:
-    static void addB(/* B container */); 
-    static void dropB(/* B container */, /* B iterator */);    
+    //static void addB(/* B container */); 
+    //static void dropB(/* B container */, /* B iterator */);    
 };
 
 #endif
