@@ -1,31 +1,31 @@
 // Food.cpp
 #include "Food.h"
-#include "Customer.h" // Include the actual Customer class header file
+#include "Customer.h" 
 
-// Default Constructor
+
 Food::Food() : type(""), id(0) {}
 
-// Parameter Constructor
+
 Food::Food(std::string type, int id) : type(type), id(id) {}
 
-// Accessor functions
+
 std::string Food::getType() const { return type; }
 
 int Food::getId() const { return id; }
 
 std::vector<Customer*> Food::getCustomers() const { return customers; }
 
-// Mutator functions
+
 void Food::setType(std::string type) { this->type = type; }
 
 void Food::setId(int id) { this->id = id; }
 
-// Overload ==
+
 bool Food::operator==(const Food& other) const {
     return (type == other.type) && (id == other.id);
 }
 
-// Overload <<
+
 std::ostream& operator<<(std::ostream& os, const Food& food) {
     os << "Type: " << food.getType() << "\n";
     os << "ID: " << food.getId() << "\n";
@@ -36,7 +36,7 @@ std::ostream& operator<<(std::ostream& os, const Food& food) {
     return os;
 }
 
-// Container Member Functions
+
 
 void Food::display() const {
     std::cout << "Food Type: " << type << "\n";
@@ -63,7 +63,7 @@ void Food::cancelFood() {
 void Food::addCustomer(Customer* customer) {
     for (const Customer* orderedCustomer : customers) {
         if (orderedCustomer == customer) {
-            // Customer already ordered this food, do nothing
+            
             return;
         }
     }
@@ -77,7 +77,7 @@ void Food::removeCustomer(Customer* customer) {
     }
 }
 std::string Food::getName() const {
-    return type; // Replace 'type' with the actual member variable storing the name
+    return type; 
 }
 
 /*double Food::getPrice() const {

@@ -35,7 +35,7 @@ void Customer::orderFood(Food* food) {
     if (!isFull()) {
         for (const Food* orderedFood : foods) {
             if (orderedFood == food) {
-                // Food already ordered, do nothing
+                
                 return;
             }
         }

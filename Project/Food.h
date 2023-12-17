@@ -8,42 +8,42 @@
 #include <algorithm>
 
 
-class Customer; // Forward declaration of the Customer class
+class Customer; 
 
 class Food {
     private:
     std::string type;
     int id;
-    std::vector<Customer*> customers; // STL container of pointers to Customer objects
+    std::vector<Customer*> customers; 
 
 public:
-    // Default Constructor
+    
     Food();
 
-    // Parameter Constructor
+    
     Food(std::string type, int id);
 
-    // Accessor functions
+    
     std::string getType() const;
     int getId() const;
     std::vector<Customer*> getCustomers() const;
 
-    // Mutator functions
+    
     void setType(std::string type);
     void setId(int id);
 
-    // Overload ==
+    
     bool operator==(const Food& other) const;
 
-    // Overload <<
+  
     friend std::ostream& operator<<(std::ostream& os, const Food& food);
 
-    // Container Member Functions
-    void display() const;  // Print formatted customers data.
-    int getNumCustomers() const;  // Return count of customers objects in customers.
-    void cancelFood();  // Empty customers. Remove this food from every customer object.
-    void addCustomer(Customer* customer);  // Parameter: customer object
-    void removeCustomer(Customer* customer);  // Parameter: customer object
+   
+    void display() const;  
+    int getNumCustomers() const;  
+    void cancelFood();  
+    void addCustomer(Customer* customer);  
+    void removeCustomer(Customer* customer);  
     std::string getName() const;
     //double getPrice() const;
 
